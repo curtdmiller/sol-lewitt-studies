@@ -22,15 +22,6 @@ main {
 .grid > div {
   display: grid;
   border: 1px solid #dddddd;
-  /*   padding: 20%; */
-}
-.grid > div::after {
-  content: "";
-  padding-top: 100%;
-}
-.grid > div::after,
-.grid > div > svg {
-  grid-area: 1 / 1 / 2 / 2;
 }
 svg {
   width: 100%;
