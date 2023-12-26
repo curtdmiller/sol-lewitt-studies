@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.svg-wrapper {
+  height: 100%;
+}
+svg {
+  position: relative;
+  background-color: black;
+  height: 125%;
+  circle:nth-child(2n) {
+    stroke: white;
+    stroke-width: 0;
+    /* animation-name: breathe;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+      */
+  }
+}
+@keyframes breathe {
+  from {
+    stroke-width: 0;
+  }
+  to {
+    stroke-width: 3;
+  }
+}
