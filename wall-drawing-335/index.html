@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wall Drawing 335</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg class="bg">
+      <defs>
+        <pattern
+          id="vertical"
+          patternUnits="userSpaceOnUse"
+          x="0"
+          y="0"
+          width="15"
+          height="100%"
+        >
+          <line
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="100%"
+            stroke="white"
+            stroke-width="2"
+          />
+        </pattern>
+        <pattern
+          id="horizontal"
+          patternUnits="userSpaceOnUse"
+          x="0"
+          y="0"
+          width="100%"
+          height="15"
+        >
+          <rect fill="black" width="100%" height="100%" />
+          <line
+            x1="0"
+            y1="0"
+            x2="100%"
+            y2="0"
+            stroke="white"
+            stroke-width="2"
+          />
+        </pattern>
+      </defs>
+      <rect x="0" y="0" width="100%" height="100%" fill="url(#vertical)" />
+    </svg>
+    <div class="grid">
+      <div class="square">
+        <svg>
+          <rect
+            x="1"
+            y="1"
+            width="99%"
+            height="99%"
+            fill="url(#horizontal)"
+            stroke="white"
+          />
+        </svg>
+      </div>
+      <div class="square">
+        <svg>
+          <circle
+            cx="50%"
+            cy="50%"
+            r="49%"
+            fill="url(#horizontal)"
+            stroke="white"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
